@@ -6,6 +6,12 @@ http://ws.audioscrobbler.com/2.0/ - Currently, only unauthenticated endpoints
 are supported. You are still required to provide an API key just not the
 secret.
 
+Installation is easy.
+
+    pip install lastfmapi
+
+Once that's done, you can do something as simple as...
+
     import lastfmapi
     
     api = lastfmapi.LastFmApi('<your api key here>')
