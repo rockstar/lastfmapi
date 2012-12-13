@@ -1,7 +1,10 @@
 LastFmApi
 ---------
 
-A thin but dynamic wrapper around the Last.fm api webservice found at http://ws.audioscrobbler.com/2.0/
+A thin but dynamic wrapper around the Last.fm api webservice found at
+http://ws.audioscrobbler.com/2.0/ - Currently, only unauthenticated endpoints
+are supported. You are still required to provide an API key just not the
+secret.
 
     import lastfmapi
     
