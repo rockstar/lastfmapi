@@ -33,7 +33,7 @@ class LastFmApi(object):
         return generic_request
 
     def __send(self, params):
-        params['api_key'] = self.__key
+        params['api_key'] = self.__api_key
         params['format'] = 'json'
 
         headers = {
@@ -42,6 +42,7 @@ class LastFmApi(object):
 
         params = urllib.urlencode(params)
         request = urllib2.Request(LASTFM_API_ENDPOINT, params, headers)
+        import pdb; pdb.set_trace()
         response = urllib2.urlopen(request).read()
 
         s = json.loads(response)
