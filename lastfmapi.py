@@ -33,7 +33,7 @@ class LastFmApi(object):
         return generic_request
 
     def __send(self, params):
-        params['api_key'] = self.__key
+        params['api_key'] = self.__api_key
         params['format'] = 'json'
 
         headers = {
