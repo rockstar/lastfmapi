@@ -1,2 +1,5 @@
 *.pyc
 _trial_temp
+build
+dist
+lastfmapi.egg-info
